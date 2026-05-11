@@ -69,7 +69,7 @@ export default function Contact() {
             {/* Map placeholder */}
             <div className="mt-12 rounded-2xl overflow-hidden border border-neutral-200 h-48 bg-neutral-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0723792467475!2d73.8373!3d18.5268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07f4f8d1c4d%3A0x2c5a5d7e6d9b3c2e!2sKolaj%20Business%20Center%2C%20Model%20Colony%2C%20Shivaji%20Nagar%2C%20Pune!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.071!2d73.837!3d18.527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0801a1a1a1d%3A0x1a1a1a1a1a1a1a1a!2sKolaj%20Business%20Center!5e0!3m2!1sen!2sin!4v1699999999999"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
