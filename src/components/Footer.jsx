@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Instagram } from 'lucide-react';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const footerLinks = {
   Services: [
@@ -22,9 +22,10 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-  { icon: Twitter, href: '#', label: 'Twitter' },
-  { icon: Instagram, href: '#', label: 'Instagram' },
+  { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
+  { icon: FaFacebookF, href: '#', label: 'Facebook' },
+  { icon: FaInstagram, href: '#', label: 'Instagram' },
+  { icon: FaWhatsapp, href: 'https://wa.me/919999999999', label: 'WhatsApp' },
 ];
 
 export default function Footer() {
@@ -57,7 +58,7 @@ export default function Footer() {
                   aria-label={social.label}
                   className="w-9 h-9 rounded-lg bg-neutral-800 flex items-center justify-center text-neutral-400 hover:bg-neutral-700 hover:text-white transition-colors"
                 >
-                  <social.icon className="w-4 h-4" />
+                  <social.icon size={16} />
                 </a>
               ))}
             </div>
