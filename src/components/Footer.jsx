@@ -1,46 +1,93 @@
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+
 const footerLinks = {
-  Company: ['About Us', 'Testimonials', 'Careers', 'Contact'],
-  Support: ['Get a Quote', 'Bulk Orders', 'Installation Support', 'Warranty Info', 'FAQs'],
+  Services: [
+    'Office Furniture',
+    'Electrical Contracting',
+    'Network Infrastructure',
+    'Workspace Planning',
+  ],
+  Company: [
+    'About Us',
+    'Projects',
+    'Testimonials',
+    'Contact',
+  ],
+  Support: [
+    'Get a Quote',
+    'Bulk Orders',
+    'Installation Support',
+    'Warranty Info',
+  ],
 };
+
+const socialLinks = [
+  { icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/sr-abhiyantra-systems-pvt.-ltd./about/', label: 'LinkedIn' },
+  { icon: FaWhatsapp, href: 'https://wa.me/919325837755', label: 'WhatsApp' },
+];
 
 export default function Footer() {
   return (
-    <footer className="bg-[#030914] text-blue-100/60 pt-24 pb-10" id="site-footer">
-      <div className="max-w-[85rem] mx-auto px-6 md:px-12 w-full">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr] gap-12 lg:gap-16 pb-16 border-b border-white/10">
+    <footer className="bg-neutral-900 text-neutral-400">
+      <div className="section-container py-16 md:py-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10 lg:gap-16">
           {/* Brand */}
-          <div className="max-w-md">
-            <div className="flex items-center gap-4 mb-6">
-              <img src="/logo-srabhiyantra.png" alt="SR Abhiyantra Systems Pvt Ltd" className="h-12 w-12 rounded-xl object-contain bg-white p-1" />
+          <div className="col-span-2 md:col-span-4 lg:col-span-2">
+            <div className="flex items-center gap-3 mb-5">
+              <img
+                src="/logo-srabhiyantra.png"
+                alt="SR Abhiyantra"
+                className="h-10 w-10 rounded-lg object-contain bg-white p-1"
+              />
               <div>
-                <p className="text-white font-black text-xl leading-tight tracking-wide">SR ABHIYANTRA</p>
-                <p className="text-blue-200/50 text-xs tracking-[0.2em] font-bold mt-1 uppercase">SYSTEM PVT LTD</p>
+                <p className="text-white font-semibold">SR Abhiyantra</p>
+                <p className="text-xs text-neutral-500">System Pvt Ltd</p>
               </div>
             </div>
-            <p className="text-[15px] leading-relaxed font-medium">
-              Authorized dealer of premium office furniture and workspace solutions for corporate & institutional clients across India. Building better workspaces since 2012.
+            <p className="text-sm leading-relaxed max-w-xs mb-6">
+              Authorized dealer of premium office furniture and workspace solutions 
+              for corporate & institutional clients across India.
             </p>
+            <div className="flex items-center gap-3">
+              {socialLinks.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  aria-label={social.label}
+                  className="w-9 h-9 rounded-lg bg-neutral-800 flex items-center justify-center text-neutral-400 hover:bg-neutral-700 hover:text-white transition-colors"
+                >
+                  <social.icon size={16} />
+                </a>
+              ))}
+            </div>
           </div>
 
           {/* Link columns */}
           {Object.entries(footerLinks).map(([title, links]) => (
             <div key={title}>
-              <h4 className="text-[15px] font-black text-white mb-6 tracking-widest uppercase">{title}</h4>
-              <ul className="space-y-4">
-                {links.map(link => (
+              <h4 className="text-sm font-semibold text-white mb-4">{title}</h4>
+              <ul className="space-y-3">
+                {links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="text-[15px] hover:text-white hover:underline underline-offset-4 transition-all duration-300 font-medium">{link}</a>
+                    <a
+                      href="#"
+                      className="text-sm hover:text-white transition-colors"
+                    >
+                      {link}
+                    </a>
                   </li>
                 ))}
               </ul>
             </div>
           ))}
         </div>
+      </div>
 
-        {/* Bottom bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-10 text-sm font-medium text-blue-200/40">
+      {/* Bottom bar */}
+      <div className="border-t border-neutral-800">
+        <div className="section-container py-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm">
           <p>&copy; {new Date().getFullYear()} SR Abhiyantra System Pvt Ltd. All rights reserved.</p>
-          <div className="flex gap-8">
+          <div className="flex items-center gap-6">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
           </div>

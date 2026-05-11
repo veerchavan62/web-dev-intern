@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
-/* ── Design Tokens ─────────────────────────────────── */
+/* ── Premium Design Tokens ─────────────────────────── */
 :root {
-  --navy-950: #05101e;
-  --navy-900: #081a43;
-  --navy-800: #0a2560;
-  --navy-700: #0d3080;
-  --navy-600: #133b88;
-  --navy-500: #1d4ed8;
-  --slate-50: #f8fafc;
-  --slate-100: #f1f5f9;
-  --slate-200: #e2e8f0;
-  --slate-300: #cbd5e1;
-  --slate-400: #94a3b8;
-  --slate-500: #64748b;
-  --slate-600: #475569;
-  --slate-700: #334155;
-  --slate-800: #1e293b;
-  --slate-900: #0f172a;
+  /* Primary - Sophisticated Navy/Charcoal */
+  --primary-950: #0a0f1a;
+  --primary-900: #111827;
+  --primary-800: #1f2937;
+  --primary-700: #374151;
+  --primary-600: #4b5563;
+  
+  /* Neutrals */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #e5e5e5;
+  --neutral-300: #d4d4d4;
+  --neutral-400: #a3a3a3;
+  --neutral-500: #737373;
+  --neutral-600: #525252;
+  --neutral-700: #404040;
+  --neutral-800: #262626;
+  --neutral-900: #171717;
+  
+  /* Accent - Elegant Blue */
+  --accent-50: #eff6ff;
+  --accent-100: #dbeafe;
+  --accent-200: #bfdbfe;
+  --accent-300: #93c5fd;
+  --accent-400: #60a5fa;
+  --accent-500: #3b82f6;
+  --accent-600: #2563eb;
+  
+  /* White */
   --white: #ffffff;
-  --accent: #3b82f6;
-  --accent-light: #60a5fa;
 }
 
 /* ── Base Reset ────────────────────────────────────── */
@@ -41,7 +52,7 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   line-height: 1.6;
-  color: var(--slate-800);
+  color: var(--neutral-800);
   background: var(--white);
   overflow-x: hidden;
 }
@@ -61,7 +72,7 @@ a {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(28px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -81,52 +92,77 @@ a {
 
 @keyframes float {
   0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  50% { transform: translateY(-8px); }
 }
 
-@keyframes pulse-glow {
+@keyframes pulse-subtle {
   0%, 100% { opacity: 0.4; }
-  50% { opacity: 0.7; }
+  50% { opacity: 0.6; }
+}
+
+@keyframes pulse-whatsapp {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
 }
 
 .animate-fade-in-up {
-  animation: fadeInUp 0.7s ease-out both;
+  animation: fadeInUp 0.6s ease-out both;
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.6s ease-out both;
+  animation: fadeIn 0.5s ease-out both;
 }
 
 .animate-delay-100 { animation-delay: 0.1s; }
 .animate-delay-200 { animation-delay: 0.2s; }
 .animate-delay-300 { animation-delay: 0.3s; }
 .animate-delay-400 { animation-delay: 0.4s; }
-.animate-delay-500 { animation-delay: 0.5s; }
-.animate-delay-600 { animation-delay: 0.6s; }
-.animate-delay-700 { animation-delay: 0.7s; }
 
 /* ── Marquee ───────────────────────────────────────── */
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
 }
 
 /* ── Utility ───────────────────────────────────────── */
 .section-container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 24px;
 }
 
 @media (min-width: 768px) {
   .section-container {
-    padding: 0 40px;
+    padding: 0 48px;
   }
 }
 
 @media (min-width: 1024px) {
   .section-container {
-    padding: 0 48px;
+    padding: 0 64px;
   }
+}
+
+/* ── Glassmorphism ─────────────────────────────────── */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.glass-dark {
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ── WhatsApp Button ───────────────────────────────── */
+.whatsapp-pulse {
+  animation: pulse-whatsapp 2s infinite;
 }
