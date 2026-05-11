@@ -34,7 +34,7 @@ export default function CtaBanner() {
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
-              href="https://wa.me/919999999999?text=Hello%20SR%20Abhiyantra%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20workspace%20solutions%20and%20dealership%20services."
+              href="https://wa.me/919325837755?text=Hello%20SR%20Abhiyantra%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20workspace%20solutions%20and%20dealership%20services."
               className="inline-flex items-center gap-2 px-8 py-4 border border-neutral-600 text-white rounded-full font-medium hover:bg-white/5 transition-colors"
             >
               <svg className="w-5 h-5 text-emerald-400" fill="currentColor" viewBox="0 0 24 24">

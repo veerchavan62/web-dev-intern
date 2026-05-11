@@ -69,14 +69,14 @@ export default function Contact() {
             {/* Map placeholder */}
             <div className="mt-12 rounded-2xl overflow-hidden border border-neutral-200 h-48 bg-neutral-200">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242117.70818867057!2d73.72287834999999!3d18.524599599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf2e67461101%3A0x828d43bf9d9ee343!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.0723792467475!2d73.8373!3d18.5268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c07f4f8d1c4d%3A0x2c5a5d7e6d9b3c2e!2sKolaj%20Business%20Center%2C%20Model%20Colony%2C%20Shivaji%20Nagar%2C%20Pune!5e0!3m2!1sen!2sin!4v1699999999999!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Office Location"
+                title="Office Location - Kolaj Business Center"
               />
             </div>
           </motion.div>
@@ -164,7 +164,7 @@ export default function Contact() {
                     <Send className="w-4 h-4" />
                   </button>
                   <a
-                    href="https://wa.me/919999999999?text=Hello%20SR%20Abhiyantra%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20workspace%20solutions%20and%20dealership%20services."
+                    href="https://wa.me/919325837755?text=Hello%20SR%20Abhiyantra%20Team%2C%20I%20would%20like%20to%20inquire%20about%20your%20workspace%20solutions%20and%20dealership%20services."
                     className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600 text-white rounded-xl font-medium hover:bg-emerald-700 transition-colors"
                   >
                     <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
