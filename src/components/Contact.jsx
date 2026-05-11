@@ -5,19 +5,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: 'Email',
-    value: 'info@srabhiyantra.com',
-    href: 'mailto:info@srabhiyantra.com',
+    value: 'ravi@srabhiyantra.com',
+    href: 'mailto:ravi@srabhiyantra.com',
   },
   {
     icon: Phone,
     label: 'Phone',
-    value: '+91 99999 99999',
-    href: 'tel:+919999999999',
+    value: '+91 9325837755',
+    href: 'tel:+919325837755',
   },
   {
     icon: MapPin,
     label: 'Office',
-    value: 'Pune, Maharashtra, India',
+    value: 'Kolaj Business Center, Flat No.1, 1st Floor Paree Priya Apartment, Gokhale Road, Near IDBI Bank, Model Colony, Shivaji Nagar, Pune-411016, Maharashtra, India',
     href: '#',
   },
 ];
