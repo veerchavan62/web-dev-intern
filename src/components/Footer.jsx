@@ -1,4 +1,4 @@
-import { FaFacebookF, FaInstagram, FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
+import { FaLinkedinIn, FaWhatsapp } from 'react-icons/fa';
 
 const footerLinks = {
   Services: [
@@ -22,9 +22,7 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: FaLinkedinIn, href: '#', label: 'LinkedIn' },
-  { icon: FaFacebookF, href: '#', label: 'Facebook' },
-  { icon: FaInstagram, href: '#', label: 'Instagram' },
+  { icon: FaLinkedinIn, href: 'https://www.linkedin.com/company/sr-abhiyantra-systems-pvt.-ltd./about/', label: 'LinkedIn' },
   { icon: FaWhatsapp, href: 'https://wa.me/919325837755', label: 'WhatsApp' },
 ];
 
